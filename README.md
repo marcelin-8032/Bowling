@@ -6,6 +6,6 @@
   - Maven
 
 ## How to Run
-  1. `cd Bowling`.
-  2. Run `mvn test`.
+  1. `cd Bowling`
+  2. Run `mvn test`
 
