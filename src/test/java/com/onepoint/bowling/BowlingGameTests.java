@@ -2,8 +2,6 @@ package com.onepoint.bowling;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-//import static org.hamcrest.CoreMatchers.*;
-//import static org.hamcrest.MatcherAssert.*;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -103,14 +101,21 @@ class BowlingGameTests {
 				5,5, 5,5,
 				5,5, 5,5,
 				5,5, 5,5,
-				5,5, 5,5, 5);
+				5,5, 5,5,
+				5);
 		assertEquals(150, bowlingGame.score());
 	}
 
 	@Test
 	void canScoreWhenLastFrameStrike() {
 		// last frame is strike, so there are two bonus
-		bowlingGame.roll(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 1,3);
+		bowlingGame.roll(
+				0,0, 0,0, 
+				0,0, 0,0,
+				0,0, 0,0,
+				0,0, 0,0,
+				0,0, 10,
+				1,3);
 		assertEquals(14, bowlingGame.score());
 	}
 
